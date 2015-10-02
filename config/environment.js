@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'scupids',
     environment: environment,
-    baseURL: '/scupids',
+    baseURL: '/',
     locationType: 'hash',
     EmberENV: {
       FEATURES: {
