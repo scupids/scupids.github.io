@@ -40,7 +40,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/name-of-your-repo';
+//    ENV.baseURL = '/name-of-your-repo';
   }
 
   return ENV;
