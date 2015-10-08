@@ -1,41 +1,124 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('/fonts/Milano_regular.ttf') format('truetype');
+    font-family: 'MyWebFont';
+    src: url('/fonts/Milano_regular.ttf') format('truetype');
 }
-html{
+html {
     font-size: 10px;
     height: 100%;
 }
-body{
-    font-family: 'MyWebFont', Fallback, 'Helvetica';
-/*    background-color: #4fccc4;*/
-    background-color: black;
+body {
+    font-family: 'Heiti SC';
     position: relative;
     height: 100%;
     margin: 0;
 }
-h2{
-    text-align: center;
-    font-size: 10rem;
-    font-weight: 300;
+.ember-view {
+    height: 100%;
+}
+.hero-container {
+    height: 100%;
+    position: relative;
+    background-image: url('/imgs/backgrounds/hero.jpg');
+    background-size: cover;
+    background-position-x: 80%;
+    overflow: hidden;
+}
+
+/*Nav Bar*/
+
+#nav-bar {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    height: 5rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-logo {
+    float: left;
+    line-height: 3rem;
+    font-size: 2.5rem;
     color: white;
+    text-transform: uppercase;
+    padding: 0 2rem;
+}
+.nav-sections {
+    float: right;
+    line-height: 3rem;
+    margin: 0;
+    padding: 0 1rem;
+}
+.nav-sections li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+.nav-sections li a {
+    color: white;
+}
+
+/*Nav End*/
+
+.content {
+    height: calc(100% - 5rem);
+    margin-top: 5rem; 
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    clear: both
+}
+
+/*Section One*/
+
+.hero-section {
+    height: 100%;
+    background-color: white;
+}
+.hero-content {
     position: relative;
     top: 40%;
     transform: translateY(-50%);
-    margin: 0;
+    margin-left: 10%;
 }
-h3{
-    color: white;
-    font-size: 1.8rem;
-    width: 100%;
-    text-align: center;
+.hero-brand {
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+blockquote {
+    border: none;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+.quote-cite {
+    font-size: small;
+}
+.cover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f2f2f2;
+}
+.explore {
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    text-transform: uppercase;
 }
-h3 a{
+a:hover {
     color: white;
 }
-.ember-view{
-    height: 100%;
-    overflow: hidden;
+@media only screen and (max-width: 1000px) {
+    blockquote{
+        width: 70%;
+    }
 }
+@media only screen and (max-width: 600px) {
+    blockquote{
+        width: 90%;
+    }
+}
+/*End Section One*/
