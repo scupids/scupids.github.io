@@ -1,5 +1,5 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-    classNames: ['hero-container']
+    classNames: ['page-content']
 });

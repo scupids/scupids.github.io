@@ -1,0 +1,9 @@
+<div class="member-container">
+    {{#each people as |person|}}
+    <div class="member">
+        <img class="member-img" src="{{person.img}}">
+        <div class="member-name">{{person.name}}</div>
+    </div>
+    {{/each}}
+</div>
+{{yield}}
