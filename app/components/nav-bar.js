@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+    classNames: ['nav-container'],
     onInsert: function () {
         $('[data-scroll]').click(function (e) {
             var href = $(e.target).attr('href'),
