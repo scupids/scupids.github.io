@@ -12,6 +12,24 @@ body {
     height: 100%;
     margin: 0;
 }
+h1{
+    text-align:center;
+}
+.w-w-r-p, .w-w-r-c, .w-w-d-p, .w-w-d-c{
+   display:inline-block;
+    width: 48%;
+}
+.wwa{
+    min-height:25rem;
+}
+.wwd{
+    min-height:35rem;
+}
+.w-w-r, .w-w-d{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
 .ember-view {
     height: 100%;
 }
