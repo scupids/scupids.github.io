@@ -22,6 +22,7 @@ body {
     background-size: cover;
     background-position-x: 80%;
     overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
 }
 
 /*Nav Bar*/
