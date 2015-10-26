@@ -12,6 +12,31 @@ body {
     height: 100%;
     margin: 0;
 }
+h1{
+    text-align:center;
+}
+.w-w-r-p, .w-w-r-c, .w-w-d-p, .w-w-d-c{
+   display:inline-block;
+    width: 48%;
+}
+.wwa, .wwd{
+    min-height:25rem;
+}
+
+.w-w-r, .w-w-d{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+	height:100%;
+}
+.w-w-d-p{
+  height: 100%;
+    display: block;
+    float: left;
+}
+	.super-img{
+		height:25rem;
+	}
 .ember-view {
 /*    height: 100%;*/
 }
@@ -159,11 +184,19 @@ explore:hover {
     padding: 2rem;
     text-align: center;
 }
+.parent.team-container{
+	background-color: #f9f9f9;;
+}
+.parent:after{
+    background:url('http://www.dummyimage.com/300x300/000/fff&text=parent+image');
+    opacity:0.2;
+}
 .member {
     height: 20rem;
     width: auto;
     display: inline-block;
     margin: 2rem 4.5rem;
+	cursor: pointer;
 }
 .member-container{
     position: relative;
@@ -182,9 +215,44 @@ explore:hover {
     filter: grayscale(30%);
     -webkit-filter: grayscale(30%);
 }
-.member:hover .member-img {
+.member:hover {
+    .member-img {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
+     }
+}
+.member-info{
+    position: absolute;
+    height: auto;
+    width: auto;
+	min-width:50rem;
+    left: 0%;
+    top: 0px;   
+	background-color: #f9f9f9;
+    opacity: 1;
+    z-index: 1;
+    display: none;
+	margin:2% 10%;    
+	cursor: crosshair;
+	
+}
+.team-member{
+    width: 20rem;
+    float: left;
+    padding: 4% 2rem;
+    margin-left: 10%;
+}
+.member-content{
+    margin: 2rem;
+    float: left;
+    width: calc(80% - 24rem);
+    height: auto;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    padding: 4% 6%;
+    overflow-wrap: break-word;
+    display: inline-block;
+	margin-right:10%;
 }
 .member-name {
     width: 100%;
@@ -192,6 +260,22 @@ explore:hover {
     font-size: 1.5rem;
     line-height: 5rem;
 }
+.member.scale-down{
+	transform: scale(0.5);
+    opacity:0;
+}
+.member {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+	position:relative;
+  }
+  .member.move-left {
+    box-sizing: border-box;
+    min-width: 22rem;
+  }
+
 
 /*End The Team*/
 
@@ -203,12 +287,12 @@ explore:hover {
     #team {
         min-height: 50rem;
     }
-    .member{
+    .member, .member-info{
         margin: 2rem 10rem;
     }
 }
 @media only screen and (max-width: 750px) {
-    .member{
+    .member .member-info{
         margin: 2rem 5rem;
     }
 }
@@ -221,7 +305,7 @@ explore:hover {
     #team {
         min-height: 100rem;
     }
-    .member{
+    .member .member-info{
         margin: 2rem 10rem;
     }
 }
