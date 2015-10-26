@@ -1,9 +1,18 @@
 <div class="member-container">
     {{#each people as |person|}}
-    <div class="member">
+    <div class="member" data-id="{{person.id}}" {{action 'displayMemberContent' this}}>
         <img class="member-img" src="{{person.img}}">
         <div class="member-name">{{person.name}}</div>
     </div>
     {{/each}}
+	<div class="member-info">
+		<div class="team-member" data-id="">
+            <img class="member-img" src="">
+			
+    </div>
+  <div class="member-content" {{action 'hideMemberContent' this}}>
+	     
+	</div>
+</div>
 </div>
 {{yield}}
