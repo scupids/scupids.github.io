@@ -1,6 +1,6 @@
 import Ember from 'ember';
 export default Ember.Component.extend({
-    classNames: ['team-container'],
+    classNames: ['team-container', 'page-full-height'],
 	peopleContent:{
 	1:"A single dimensional creature, notable for his frail skeletal morphology and multifaceted creativity. Lives in the vicinity of charcoal, yet flaunts colorful fingers that can generate beautiful vistas on screen.",
 		2:"A nerdy creature, mostly found in solitude. Commonly known for his rotund frame and sophophilic brain. Known to mark his territory around any technology that comes his way.",

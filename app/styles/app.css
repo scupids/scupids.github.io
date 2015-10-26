@@ -38,6 +38,9 @@ h1{
 		height:25rem;
 	}
 .ember-view {
+/*    height: 100%;*/
+}
+.page-full-height{
     height: 100%;
 }
 .hero-container {
@@ -47,6 +50,7 @@ h1{
     background-size: cover;
     background-position-x: 80%;
     overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
 }
 
 /*Nav Bar*/
