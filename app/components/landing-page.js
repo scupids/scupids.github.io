@@ -8,7 +8,7 @@ export default Ember.Component.extend({
             var scrollPosition = $('.content').scrollTop(),
                 scrollTop = $('#team').position().top;
 
-            $('.nav-container').toggleClass('reveal', scrollPosition > scrollTop / 2);
+            $('.nav-container').toggleClass('reveal', scrollPosition > scrollTop / 3);
             $('.hero-content').toggleClass('reveal', (scrollPosition <= scrollTop / 3));
             $('.member-container').toggleClass('reveal', (scrollPosition > 2*scrollTop / 3));
 
