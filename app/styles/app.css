@@ -12,36 +12,13 @@ body {
     height: 100%;
     margin: 0;
 }
-h1{
-    text-align:center;
-}
-.w-w-r-p, .w-w-r-c, .w-w-d-p, .w-w-d-c{
-   display:inline-block;
-    width: 48%;
-}
-.wwa, .wwd{
-    min-height:25rem;
-}
-
-.w-w-r, .w-w-d{
-    text-align: center;
-    font-size: 2rem;
-    line-height: 2.5rem;
-	height:100%;
-}
-.w-w-d-p{
-  height: 100%;
-    display: block;
-    float: left;
-}
-	.super-img{
-		height:25rem;
-	}
-.ember-view {
-/*    height: 100%;*/
-}
-.page-full-height{
+.page-full-height {
     height: 100%;
+}
+.vc {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .hero-container {
     height: 100%;
@@ -50,7 +27,7 @@ h1{
     background-size: cover;
     background-position-x: 80%;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*Nav Bar*/
@@ -68,7 +45,7 @@ h1{
 }
 #nav-bar a {
     color: white !important;
-    text-shadow: 0px 0px 1rem rgba(0,0,0,0.5);
+    text-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.5);
 }
 .nav-logo {
     float: left;
@@ -91,11 +68,11 @@ h1{
 .nav-sections li a {
     color: white;
 }
-.nav-container{
+.nav-container {
     opacity: 0;
     transition: opacity ease 700ms;
 }
-.reveal{
+.reveal {
     opacity: 1!important;
 }
 
@@ -128,7 +105,7 @@ h1{
 .hero-brand {
     font-size: 7rem;
     text-transform: uppercase;
-    text-shadow: 0px 0px 1rem rgba(0,0,0,0.2);
+    text-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.2);
 }
 blockquote {
     border: none;
@@ -151,7 +128,7 @@ blockquote {
     transform: translateX(-50%);
     padding: 2rem;
     text-transform: uppercase;
-    text-shadow: 0px 0px 1rem rgba(0,0,0,0.5);
+    text-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.5);
 }
 explore:hover {
     color: white;
@@ -170,9 +147,51 @@ explore:hover {
     text-decoration: none;
 }
 
-
-
 /*End Section One*/
+
+
+/*Section Who We Are*/
+
+.wwa {
+    position: relative;
+    min-height: 30rem
+}
+.wwd{
+    position: relative;
+    min-height: 60rem
+}
+.section-desc {
+    width: 60%;
+    font-size: 2.5rem;
+    float: right;
+    padding-right: 10%;
+    text-align: justify;
+}
+.section-graphic {
+    padding: 8%;
+    float: left;
+    background-image: url("https://d13yacurqjgara.cloudfront.net/users/47145/screenshots/685274/88.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    margin: 0 12%;
+}
+
+/*End of Who we are*/
+
+
+/*Section What we do*/
+
+.wwd .section-desc {
+    float: left;
+    padding: 0 0 0 10%;
+}
+.wwd .section-graphic {
+    float: right;
+    background-image: url("/imgs/supertext/supertext.jpg");
+}
+
+/*End of What we do*/
 
 
 /*The Team*/
@@ -184,21 +203,22 @@ explore:hover {
     padding: 2rem;
     text-align: center;
 }
-.parent.team-container{
-	background-color: #f9f9f9;;
+.parent.team-container {
+    background-color: #f9f9f9;
+    ;
 }
-.parent:after{
-    background:url('http://www.dummyimage.com/300x300/000/fff&text=parent+image');
-    opacity:0.2;
+.parent:after {
+    background: url('http://www.dummyimage.com/300x300/000/fff&text=parent+image');
+    opacity: 0.2;
 }
 .member {
     height: 20rem;
     width: auto;
     display: inline-block;
     margin: 2rem 4.5rem;
-	cursor: pointer;
+    cursor: pointer;
 }
-.member-container{
+.member-container {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -217,32 +237,31 @@ explore:hover {
 }
 .member:hover {
     .member-img {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-     }
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
 }
-.member-info{
+.member-info {
     position: absolute;
     height: auto;
     width: auto;
-	min-width:50rem;
+    min-width: 50rem;
     left: 0%;
-    top: 0px;   
-	background-color: #f9f9f9;
+    top: 0px;
+    background-color: #f9f9f9;
     opacity: 1;
     z-index: 1;
     display: none;
-	margin:2% 10%;    
-	cursor: crosshair;
-	
+    margin: 2% 10%;
+    cursor: crosshair;
 }
-.team-member{
+.team-member {
     width: 20rem;
     float: left;
     padding: 4% 2rem;
     margin-left: 10%;
 }
-.member-content{
+.member-content {
     margin: 2rem;
     float: left;
     width: calc(80% - 24rem);
@@ -252,7 +271,7 @@ explore:hover {
     padding: 4% 6%;
     overflow-wrap: break-word;
     display: inline-block;
-	margin-right:10%;
+    margin-right: 10%;
 }
 .member-name {
     width: 100%;
@@ -260,26 +279,27 @@ explore:hover {
     font-size: 1.5rem;
     line-height: 5rem;
 }
-.member.scale-down{
-	transform: scale(0.5);
-    opacity:0;
+.member.scale-down {
+    transform: scale(0.5);
+    opacity: 0;
 }
 .member {
     -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;
     -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
-	position:relative;
-  }
-  .member.move-left {
+    position: relative;
+}
+.member.move-left {
     box-sizing: border-box;
     min-width: 22rem;
-  }
-
+}
 
 /*End The Team*/
 
+
 /*Media Queries*/
+
 @media only screen and (max-width: 1100px) {
     blockquote {
         width: 70%;
@@ -287,13 +307,29 @@ explore:hover {
     #team {
         min-height: 50rem;
     }
-    .member, .member-info{
+    .member,
+    .member-info {
         margin: 2rem 10rem;
     }
 }
 @media only screen and (max-width: 750px) {
-    .member .member-info{
+    .member .member-info {
         margin: 2rem 5rem;
+    }
+    .wwd .section-desc,
+    .section-desc {
+        width: 100%;
+        float: none;
+        padding: 10%;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .wwd .section-graphic,
+    .section-graphic {
+        padding: 20%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin: 0 30%;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -305,8 +341,14 @@ explore:hover {
     #team {
         min-height: 100rem;
     }
-    .member .member-info{
+    .member .member-info {
         margin: 2rem 10rem;
     }
+    .wwd .section-graphic,
+    .section-graphic {
+        padding: 25%;
+        margin: 0 25%;
+    }
 }
+
 /*End Media Quires*/
