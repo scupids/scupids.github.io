@@ -1,6 +1,6 @@
 <div class="member-container">
     {{#each people as |person|}}
-    <div class="member" data-id="{{person.id}}" {{action 'displayMemberContent' this}}>
+    <div class="member" data-id="{{person.id}}">
         <img class="member-img" src="{{person.img}}">
         <div class="member-name">{{person.name}}</div>
     </div>
