@@ -92,11 +92,9 @@ body {
     float: right;
 }
 
-/*
 #nav-bar.reveal{
-    box-shadow: 0 0 20px -5px black;
+    background-color: black;
 }
-*/
 
 .reveal {
     opacity: 1!important;
@@ -188,12 +186,19 @@ explore:hover {
     min-height: 60rem;
     /*    background-color: #26a69a;*/
 }
+.section-title{
+    margin: 2rem 0;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+}
 .section-desc {
     width: 60%;
     font-size: 2.5rem;
     float: right;
     padding-right: 10%;
-    text-align: justify;
+    text-align: left;
     /*    color: #e8eaf6;*/
 }
 .section-graphic {
@@ -279,13 +284,12 @@ explore:hover {
     #team {
         min-height: 50rem;
     }
-    .member,
-    .member-info {
+    .member{
         margin: 2rem 10rem;
     }
 }
 @media only screen and (max-width: 750px) {
-    .member .member-info {
+    .member {
         margin: 2rem 5rem;
     }
     .wwd .section-desc,
@@ -316,12 +320,15 @@ explore:hover {
         clear: both;
         padding: 2rem 1rem;
     }
+    .section-desc {
+        font-size: 2rem;
+    }
 }
 @media only screen and (max-width: 550px) {
     #team {
         min-height: 100rem;
     }
-    .member .member-info {
+    .member {
         margin: 2rem 10rem;
     }
     .wwd .section-graphic,
