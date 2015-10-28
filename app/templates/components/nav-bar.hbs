@@ -1,7 +1,8 @@
 <a class="nav-logo" data-scroll href="#home">Scupids</a>
+<div class="ham-nav"  {{action "toggleNav" on="click"}}>{{fa-icon icon="bars"}}</div>
 <ul class="nav-sections">
-    <li><a data-scroll href="#wwa">Who we are</a></li>
-    <li><a data-scroll href="#wwd">What we do</a></li>
-    <li><a data-scroll href="#team">Team</a></li>
+    <li><a data-scroll="wwa" href="#wwa">Who we are</a></li>
+    <li><a data-scroll="wwd" href="#wwd">What we do</a></li>
+    <li><a data-scroll="team" href="#team">Team</a></li>
 </ul>
 {{yield}}

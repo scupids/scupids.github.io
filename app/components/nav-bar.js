@@ -2,6 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
     classNames: ['nav-container'],
+    actions: {
+        toggleNav(){
+            $("#nav-bar").toggleClass('open-nav');
+        }
+    },
     onInsert: function () {
         var $ = window.$;
         $('[data-scroll]').click(function (e) {
