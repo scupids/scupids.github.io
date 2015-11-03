@@ -40,7 +40,6 @@ body {
     clear: both;
     overflow: hidden;
     height: 5rem;
-    background-color: rgba(0, 0, 0, 0.1);
     transition: all ease 0.3s;
 }
 #nav-bar a {
@@ -111,12 +110,21 @@ body {
     clear: both
 }
 
+.sk-bg{
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    margin: 0 5%;
+    -webkit-transform: skew(0deg, -3.2deg);
+    transform: skew(0deg, -3.2deg);
+}
+
 /*Section One*/
 
 .hero-section {
-    height: 100%;
-    background-color: white;
-    overflow: hidden;
+    height: 90%;
+    background-color: transparent;
+/*    overflow: hidden;*/
 }
 .hero-content {
     position: relative;
@@ -141,7 +149,7 @@ blockquote {
     font-size: small;
 }
 .cover {
-    background-color: rgba(0, 0, 0, 0.1);
+    height: 110%;
     color: #f2f2f2;
 }
 .explore {
@@ -179,12 +187,18 @@ explore:hover {
 .wwa {
     position: relative;
     min-height: 30rem;
-    /*    background-color: #5c6bc0;*/
 }
 .wwd {
     position: relative;
-    min-height: 60rem;
-    /*    background-color: #26a69a;*/
+    min-height: 50rem;
+}
+.wwd .sk-bg{
+    background-color: #434F66;
+    height: 110%;
+}
+.wwa .sk-bg,
+.team{
+    background-color: white;
 }
 .section-title{
     margin: 2rem 0;
@@ -195,7 +209,7 @@ explore:hover {
 }
 .section-desc {
     width: 60%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     float: right;
     padding-right: 10%;
     text-align: left;
@@ -219,7 +233,7 @@ explore:hover {
 .wwd .section-desc {
     float: left;
     padding: 0 0 0 10%;
-    /*    color: #e0f2f1;*/
+    color: #eee;
 }
 .wwd .section-graphic {
     float: right;
@@ -232,6 +246,7 @@ explore:hover {
 /*The Team*/
 
 #team {
+    padding-top: 10rem;
     min-height: 24rem;
 }
 .team-container {
@@ -242,7 +257,7 @@ explore:hover {
     height: 21rem;
     width: auto;
     display: inline-block;
-    margin: 2rem 4.5rem;
+    margin: 2rem 2.5rem;
     overflow: hidden;
     transition: all ease 0.3s;
 }
@@ -288,6 +303,12 @@ explore:hover {
 
 /*End The Team*/
 
+/*Footer Styles*/
+.footer{
+    height: 20rem;
+    background-color: #434F66;
+}
+/*End of Footer Styles*/
 
 /*Media Queries*/
 
@@ -296,10 +317,10 @@ explore:hover {
         width: 70%;
     }
     #team {
-        min-height: 50rem;
+        min-height: 65rem;
     }
     .member{
-        margin: 2rem 5rem;
+        margin: 2rem 7.6rem;
     }
     .section-desc {
         font-size: 2rem;
@@ -343,7 +364,7 @@ explore:hover {
 }
 @media only screen and (max-width: 550px) {
     #team {
-        min-height: 100rem;
+        min-height: 115rem;
     }
     .member {
         margin: 2rem 3rem;
@@ -353,6 +374,10 @@ explore:hover {
         padding: 25%;
         margin: 0 25%;
     }
+    .sk-bg{
+    width: 100%;
+    margin: 0;
+}
 }
 
 /*End Media Quires*/

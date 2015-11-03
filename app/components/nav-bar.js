@@ -14,7 +14,7 @@ export default Ember.Component.extend({
                 scrollPosition = $('.content').scrollTop(),
                 scrollTop = scrollPosition +$(href).position().top + 50;
             $('.content').animate({
-                    scrollTop: Math.abs(scrollTop) -50
+                    scrollTop: Math.abs(scrollTop) -100
                 },'slow');
             return false;
         });
