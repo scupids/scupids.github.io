@@ -194,7 +194,7 @@ explore:hover {
 }
 .wwd .sk-bg{
     background-color: #434F66;
-    height: 110%;
+    height: 100%;
 }
 .wwa .sk-bg,
 .team{
@@ -251,6 +251,7 @@ explore:hover {
 #team {
     padding-top: 10rem;
     min-height: 36rem;
+    margin-top: -5rem;
 }
 .team-container {
     padding: 2rem;
