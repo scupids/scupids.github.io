@@ -251,7 +251,6 @@ explore:hover {
     display: inline-block;
     font-size: 14px;
     opacity: 0;
-    transition: all ease 0.3s;
 }
 .member-container {
     position: relative;

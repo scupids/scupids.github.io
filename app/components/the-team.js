@@ -4,12 +4,6 @@ export default Ember.Component.extend({
     people: Ember.computed('params.[]', function () {
         return [
             {
-                name: 'Vipul Garg',
-                id: 1,
-                img: '/imgs/team/vipul.jpg',
-                desc: 'A single dimensional creature, notable for his frail skeletal morphology and multifaceted creativity. Lives in the vicinity of charcoal, yet flaunts colorful fingers that can generate beautiful vistas on screen.'
-			},
-            {
                 name: 'Abhishek Gupta',
                 id: 2,
                 img: '/imgs/team/abhishek.jpg',
@@ -26,7 +20,13 @@ export default Ember.Component.extend({
                 id: 4,
                 img: '/imgs/team/pratik.jpg',
                 desc: 'An observant being known to love sleep and daydreaming. When not hanging in the web of code, he is found navigating his herd through the travails  of this demanding world.'
-            }
+            },
+            {
+                name: 'Vipul Garg',
+                id: 1,
+                img: '/imgs/team/vipul.jpg',
+                desc: 'A single dimensional creature, notable for his frail skeletal morphology and multifaceted creativity. Lives in the vicinity of charcoal, yet flaunts colorful fingers that can generate beautiful vistas on screen.'
+			}
         ];
     })
 });
