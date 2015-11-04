@@ -5,6 +5,7 @@ export default Ember.Component.extend({
     actions: {
         closeMenu(){
             $('#nav-bar').removeClass('open-nav');
+            $('#backdrop').addClass('hide');
         }
     },
     onInsert: function () {
@@ -13,6 +14,8 @@ export default Ember.Component.extend({
             var scrollPosition = $('.content').scrollTop(),
                 scrollTop = $('#wwa').position().top;
 
+            $('#backdrop').addClass('hide');
+            $('#nav-bar').removeClass('open-nav');
             $('#nav-bar').toggleClass('reveal', scrollPosition > scrollTop / 3);
             $('.hero-content').toggleClass('reveal', (scrollPosition <= scrollTop / 3));
             $('.member-container').toggleClass('reveal', (scrollPosition > 2 * scrollTop / 3));

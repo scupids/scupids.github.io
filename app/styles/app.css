@@ -34,13 +34,14 @@ body {
 
 #nav-bar {
     position: absolute;
-    z-index: 10;
+    z-index: 20;
     top: 0;
     width: 100%;
     clear: both;
     overflow: hidden;
     height: 5rem;
     transition: all ease 0.3s;
+    pointer-events: none;
 }
 #nav-bar a {
     color: white !important;
@@ -93,10 +94,21 @@ body {
 
 #nav-bar.reveal{
     background-color: black;
+    pointer-events: all;
 }
 
 .reveal {
     opacity: 1!important;
+}
+
+#backdrop{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
 }
 
 /*Nav End*/

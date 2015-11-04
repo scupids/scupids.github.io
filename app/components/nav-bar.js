@@ -4,7 +4,8 @@ export default Ember.Component.extend({
     classNames: ['nav-container'],
     actions: {
         toggleNav(){
-            $("#nav-bar").toggleClass('open-nav');
+            $('#nav-bar').toggleClass('open-nav');
+            $('#backdrop').toggleClass('hide', !$("#nav-bar").hasClass('open-nav'));
         }
     },
     onInsert: function () {
@@ -16,6 +17,8 @@ export default Ember.Component.extend({
             $('.content').animate({
                     scrollTop: Math.abs(scrollTop) -100
                 },'slow');
+            $('#backdrop').addClass('hide');
+            $('#nav-bar').removeClass('open-nav');
             return false;
         });
     }.on('didInsertElement')

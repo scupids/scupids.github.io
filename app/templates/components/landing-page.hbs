@@ -1,3 +1,4 @@
 <div id="nav-bar">{{nav-bar}}</div>
-<div {{action "closeMenu" on="click"}} class="content">{{page-content}}</div>
+<div {{action "closeMenu" on="click"}} {{action "closeMenu" on="scroll"}} id="backdrop" class="hide"></div>
+<div class="content">{{page-content}}</div>
 {{yield}}
