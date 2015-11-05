@@ -127,8 +127,10 @@ body {
     height: 100%;
     width: 90%;
     margin: 0 5%;
+/*
     -webkit-transform: skew(0deg, -3.2deg);
     transform: skew(0deg, -3.2deg);
+*/
 }
 
 /*Section One*/
