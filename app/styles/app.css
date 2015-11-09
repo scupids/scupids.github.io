@@ -182,10 +182,10 @@ blockquote {
     transform: translate(-50%, 0);
   }
 	40% {
-    transform: translate(-50%, -30px);
+    transform: translate(-50%, -15px);
   }
 	60% {
-    transform: translate(-50%, -15px);
+    transform: translate(-50%, -5px);
   }
 }
 

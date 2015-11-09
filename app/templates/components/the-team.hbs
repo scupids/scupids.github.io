@@ -1,7 +1,7 @@
 <div class="member-container">
     {{#each people as |person|}}
     <div class="member" data-id="{{person.id}}">
-        <img class="member-img" src="{{person.img}}">
+        <img class="member-img" src="{{person.img}}" alt="{{person.name}}">
         <div class="member-name">{{person.name}}</div>
         <div class="member-desc">{{person.desc}}</div>
     </div>
