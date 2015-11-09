@@ -362,15 +362,12 @@ explore:hover {
     color: white;
     background-color: #3eb489;
 }
-#mc_embed_signup_scroll {
-    box-shadow: 0 0 26px -7px black;
-}
 .subscribe-email {
     text-align: center;
     color: black;
     border: none;
     height: 4rem;
-    width: 25rem;
+    width: 20rem;
     outline: none;
 }
 .footer {
@@ -446,7 +443,7 @@ explore:hover {
     .ham-nav {
         display: block;
     }
-    .nav-bar .nav-logo{
+    .nav-bar .nav-logo {
         width: inherit;
     }
     .nav-sections li {
@@ -463,7 +460,7 @@ explore:hover {
         padding: 2rem 1rem;
     }
     .section-desc {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 @media only screen and (max-width: 550px) {
@@ -481,6 +478,15 @@ explore:hover {
     .sk-bg {
         width: 100%;
         margin: 0;
+    }
+    .subscribe-btn {
+        padding: 0 0.6rem;
+    }
+    .subscribe-email{
+        width: 18rem;
+    }
+    .hero-content{
+        margin-left: 5%;
     }
 }
 
