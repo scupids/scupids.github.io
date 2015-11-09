@@ -336,8 +336,29 @@ explore:hover {
 
 /*Footer Styles*/
 .footer{
-    height: 20rem;
     background-color: #434F66;
+    color: white;
+}
+.social-bar{
+    font-size: 2rem;
+    height: 7rem;
+    line-height: 10rem;
+    text-align: center;
+}
+.social-bar a{
+    color: white;
+    opacity: 0.4;
+    padding: 0 2rem;
+}
+.social-bar a:hover{
+    opacity: 1;
+}
+.foot-note{
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    opacity: 0.2;
+    font-size: 1.2rem;
 }
 /*End of Footer Styles*/
 
