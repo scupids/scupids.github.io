@@ -342,8 +342,10 @@ explore:hover {
 }
 .subscribe-note {
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 2rem;
+    vertical-align: middle;
+    opacity: 0.8;
 }
 .subscribe div {
     display: inline-block;
@@ -482,10 +484,10 @@ explore:hover {
     .subscribe-btn {
         padding: 0 0.6rem;
     }
-    .subscribe-email{
+    .subscribe-email {
         width: 18rem;
     }
-    .hero-content{
+    .hero-content {
         margin-left: 5%;
     }
 }
