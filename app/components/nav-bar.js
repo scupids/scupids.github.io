@@ -11,7 +11,7 @@ export default Ember.Component.extend({
     onInsert: function () {
         var $ = window.$;
         $('[data-scroll]').click(function (e) {
-            var href = $(e.target).attr('href'),
+            var href = $(e.target).closest('a').attr('href'),
                 scrollPosition = $('.content').scrollTop(),
                 scrollTop = scrollPosition +$(href).position().top + 50;
             $('.content').animate({
