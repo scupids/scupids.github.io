@@ -70,15 +70,15 @@ body {
     padding: 1rem;
     overflow: hidden;
 }
-.reveal .nav-logo{
+.reveal .nav-logo {
     opacity: 1;
     pointer-events: all;
 }
 #nav-bar.open-nav {
-    height: 12rem;
+    height: 23rem;
     background-color: black;
 }
-.open-nav .nav-logo{
+.open-nav .nav-logo {
     opacity: 1;
 }
 .ham-nav {
@@ -91,16 +91,13 @@ body {
     color: white;
     float: right;
 }
-
-#nav-bar.reveal{
+#nav-bar.reveal {
     background-color: black;
 }
-
 .reveal {
     opacity: 1!important;
 }
-
-#backdrop{
+#backdrop {
     height: 100%;
     position: absolute;
     width: 100%;
@@ -120,13 +117,12 @@ body {
     position: relative;
     clear: both
 }
-
-.sk-bg{
+.sk-bg {
     position: absolute;
     height: 100%;
     width: 90%;
     margin: 0 5%;
-/*
+    /*
     -webkit-transform: skew(0deg, -3.2deg);
     transform: skew(0deg, -3.2deg);
 */
@@ -137,7 +133,7 @@ body {
 .hero-section {
     height: 90%;
     background-color: transparent;
-/*    overflow: hidden;*/
+    /*    overflow: hidden;*/
 }
 .hero-content {
     position: relative;
@@ -170,7 +166,7 @@ blockquote {
     bottom: 0;
     color: white !important;
     left: 50%;
-/*    transform: translateX(-50%);*/
+    /*    transform: translateX(-50%);*/
     padding: 0 2rem;
     text-transform: uppercase;
     text-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.5);
@@ -178,17 +174,20 @@ blockquote {
     animation: bounce 2s infinite;
 }
 @keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {
-    transform: translate(-50%, 0);
-  }
-	40% {
-    transform: translate(-50%, -15px);
-  }
-	60% {
-    transform: translate(-50%, -5px);
-  }
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+    40% {
+        transform: translate(-50%, -15px);
+    }
+    60% {
+        transform: translate(-50%, -5px);
+    }
 }
-
 explore:hover {
     color: white;
 }
@@ -219,15 +218,15 @@ explore:hover {
     position: relative;
     min-height: 50rem;
 }
-.wwd .sk-bg{
+.wwd .sk-bg {
     background-color: #434F66;
     height: 100%;
 }
 .wwa .sk-bg,
-.team{
+.team {
     background-color: white;
 }
-.section-title{
+.section-title {
     margin: 2rem 0;
     font-weight: 600;
     width: 100%;
@@ -242,7 +241,7 @@ explore:hover {
     text-align: left;
     /*    color: #e8eaf6;*/
 }
-.section-desc a{
+.section-desc a {
     color: white;
 }
 .section-graphic {
@@ -322,7 +321,7 @@ explore:hover {
 .member:hover .member-desc {
     opacity: 1;
 }
-.member:hover .member-img{
+.member:hover .member-img {
     display: none;
 }
 .member-name {
@@ -334,33 +333,75 @@ explore:hover {
 
 /*End The Team*/
 
+
 /*Footer Styles*/
-.footer{
+
+.subscribe {
+    text-align: center;
+    padding-top: 3rem;
+}
+.subscribe-note {
+    color: white;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.subscribe div {
+    display: inline-block;
+}
+.subscribe-btn {
+    height: 4rem;
+    border-radius: 0;
+    border: none;
+    margin-top: -1px;
+    margin-left: -1rem;
+    color: white;
+    background-color: #FF9900;
+    transition: background 0.3s ease;
+}
+.subscribe-btn:hover {
+    color: white;
+    background-color: #3eb489;
+}
+#mc_embed_signup_scroll {
+    box-shadow: 0 0 26px -7px black;
+}
+.subscribe-email {
+    text-align: center;
+    color: black;
+    border: none;
+    height: 4rem;
+    width: 25rem;
+    outline: none;
+}
+.footer {
+    padding: 2rem;
     background-color: #434F66;
     color: white;
 }
-.social-bar{
+.social-bar {
     font-size: 2rem;
     height: 7rem;
     line-height: 10rem;
     text-align: center;
 }
-.social-bar a{
+.social-bar a {
     color: white;
     opacity: 0.4;
     padding: 0 2rem;
 }
-.social-bar a:hover{
+.social-bar a:hover {
     opacity: 1;
 }
-.foot-note{
+.foot-note {
     height: 3rem;
     line-height: 3rem;
     text-align: center;
     opacity: 0.2;
     font-size: 1.2rem;
 }
+
 /*End of Footer Styles*/
+
 
 /*Media Queries*/
 
@@ -371,7 +412,7 @@ explore:hover {
     #team {
         min-height: 65rem;
     }
-    .member{
+    .member {
         margin: 2rem 7.6rem;
     }
     .section-desc {
@@ -405,6 +446,17 @@ explore:hover {
     .ham-nav {
         display: block;
     }
+    .nav-bar .nav-logo{
+        width: inherit;
+    }
+    .nav-sections li {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+    .nav-sections a {
+        width: 100%;
+        display: inline-block;
+    }
     .nav-sections {
         float: none;
         clear: both;
@@ -426,10 +478,10 @@ explore:hover {
         padding: 25%;
         margin: 0 25%;
     }
-    .sk-bg{
-    width: 100%;
-    margin: 0;
-}
+    .sk-bg {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 /*End Media Quires*/
