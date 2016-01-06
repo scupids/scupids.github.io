@@ -19,7 +19,7 @@ body {
 .hero-container {
     height: 100%;
     position: relative;
-    background-image: url('/imgs/backgrounds/hero.jpg');
+    background-image: url('/imgs/backgrounds/fly.jpg');
     background-size: cover;
     background-position-x: 80%;
     overflow: hidden;
@@ -151,7 +151,7 @@ body {
 blockquote {
     border: none;
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
 }
 .quote-cite {
@@ -219,7 +219,8 @@ explore:hover {
     min-height: 50rem;
 }
 .wwd .sk-bg {
-    background-color: #434F66;
+/*    background-color: #434F66;*/
+    background-color: #404242;
     height: 100%;
 }
 .wwa .sk-bg,
@@ -374,7 +375,8 @@ explore:hover {
 }
 .footer {
     padding: 2rem;
-    background-color: #434F66;
+/*    background-color: #434F66;*/
+    background-color: #404242;
     color: white;
 }
 .social-bar {
