@@ -40,6 +40,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build --environment production` (production)
 
 ### Deploying
+*  Run `ember github-pages:commit --message "Updates the Cover and quote" --branch master` in ember branch and then push the changes in master.
+
+### Deploying
 
 Specify what it takes to deploy your app.
 
